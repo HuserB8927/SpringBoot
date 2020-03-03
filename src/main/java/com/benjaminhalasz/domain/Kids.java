@@ -5,7 +5,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
@@ -18,9 +17,7 @@ public class Kids {
     private String firstName;
     @NotNull
     private String lastName;
-
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "parents_id")
     @NotNull
     private Parents parents;
 
@@ -65,8 +62,4 @@ public class Kids {
 	public void setParents(Parents parents) {
 		this.parents = parents;
 	}
-
-	
-	
-
 }

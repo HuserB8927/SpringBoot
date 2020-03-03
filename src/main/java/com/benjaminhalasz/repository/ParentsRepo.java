@@ -8,6 +8,6 @@ import com.benjaminhalasz.domain.Parents;
 @Repository
 public interface ParentsRepo extends CrudRepository<Parents, Long> {
 
-	Parents findParentByFirstName(String firstName);
+	Parents findParentsByFirstName(String firstName);
 
 }

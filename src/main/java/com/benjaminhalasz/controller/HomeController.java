@@ -9,6 +9,7 @@ import com.benjaminhalasz.repository.KidsRepo;
 
 @Controller
 public class HomeController {
+	
     KidsRepo kidsRepository;
 
     @Autowired
