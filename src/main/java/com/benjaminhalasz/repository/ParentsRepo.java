@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.benjaminhalasz.domain.Parents;
 
 @Repository
-public interface ParentsRepo extends CrudRepository<Parents, String> {
+public interface ParentsRepo extends CrudRepository<Parents, Long> {
 
 	Parents findParentsByFirstName(String firstName);
 

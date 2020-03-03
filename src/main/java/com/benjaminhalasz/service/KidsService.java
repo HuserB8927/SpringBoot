@@ -19,6 +19,6 @@ public class KidsService {
         this.kidsRepository = kidsRepository;
     }
     public List<Kids> getKids(String parentsName) {
-        return kidsRepository.findAllByParent_FirstName(parentsName);
+        return kidsRepository.findAllByParents_FirstName(parentsName);
     }
 }

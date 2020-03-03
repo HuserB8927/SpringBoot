@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 public class Kids {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private long Id;
+    private long id;
     @NotNull
     private String firstName;
     @NotNull
@@ -24,18 +24,18 @@ public class Kids {
     public Kids() {
     }
 
-    public Kids(String firstName, String lastName, Parents parents) {
-        super();
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.parents = parents;
-    }
+//    public Kids(String firstName, String lastName, Parents parents) {
+//        super();
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.parents = parents;
+//    }
 	public long getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(long id) {
-		Id = id;
+		this.id = id;
 	}
 
 
