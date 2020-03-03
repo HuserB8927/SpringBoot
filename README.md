@@ -1,4 +1,6 @@
-The program stores kids and one of their parents (or both) and when I search the name of the parent the program should display the name of kid (or kids).
+Using H2 database to test the project: localhost:8080/db
+
+The program stores kids and one of their parent (or both) and when I search the name of the parent the program should display the name of kid (or kids).
 
 Two interfaces needed:
 
