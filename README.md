@@ -1,6 +1,6 @@
 #Spring Boot
 
-[![Build Status](https://travis-ci.org/HuserB8927/Simple_CRUD.svg?branch=master)]
+[![Build Status](https://travis-ci.org/HuserB8927/SpringBoot.svg?branch=master)](https://travis-ci.org/HuserB8927/SpringBoot)
 
 Using H2 database to test the project: localhost:8080/db
 
