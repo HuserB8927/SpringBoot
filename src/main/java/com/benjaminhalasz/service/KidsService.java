@@ -10,6 +10,7 @@ import com.benjaminhalasz.repository.KidsRepo;
 
 @Service
 public class KidsService {
+	
     KidsRepo kidsRepository;
 
 

@@ -25,6 +25,7 @@ public class HomeController {
     ParentsRepo parentsRepository;
     
     private KidsService kidsService;
+    
     private ParentsService parentsService;
 
     @Autowired
@@ -35,13 +36,21 @@ public class HomeController {
     public void setParentsRepository(ParentsRepo parentsRepository) {
         this.parentsRepository = parentsRepository;
     }
+    @Autowired
+    public void setParentsService(ParentsService parentsService) {
+    	this.parentsService = parentsService;
+    }
+    @Autowired
+    public void setKidsService(KidsService kidsService) {
+    	this.kidsService = kidsService;
+    }
     
     @RequestMapping("/")
     private String findParents(Parents parentsName, Model model) {
-        Parents parents = parentsService.findParents(parentsName.getFirstName());
+        Parents parents = parentsService.findParents(parentsName.getLastName());
         List<Kids> kids = kidsService.getKids(parentsName.getFirstName());
 
-        model.addAttribute("parents", parents.getFirstName());
+        model.addAttribute("parents", parents);
         model.addAttribute("children", kids);
         // render to appropriate view
         return "home";
