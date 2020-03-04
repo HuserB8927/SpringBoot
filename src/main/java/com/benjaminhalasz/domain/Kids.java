@@ -23,13 +23,7 @@ public class Kids {
 
     public Kids() {
     }
-
-//    public Kids(String firstName, String lastName, Parents parents) {
-//        super();
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.parents = parents;
-//    }
+    
 	public long getId() {
 		return id;
 	}
