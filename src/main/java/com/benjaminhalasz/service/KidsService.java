@@ -22,4 +22,7 @@ public class KidsService {
     public List<Kids> getKids(String parentsName) {
         return kidsRepository.findAllByParents_FirstName(parentsName);
     }
+    public Kids getSpecificKid(String parentsLastName) {
+    	return kidsRepository.findAllByParentsLastName(parentsLastName);
+    }
 }

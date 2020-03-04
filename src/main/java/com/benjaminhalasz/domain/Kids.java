@@ -17,13 +17,21 @@ public class Kids {
     private String firstName;
     @NotNull
     private String lastName;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne()
     @NotNull
     private Parents parents;
 
     public Kids() {
     }
     
+    
+	public Kids(@NotNull String firstName, @NotNull String lastName, @NotNull Parents parents) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.parents = parents;
+	}
+
+
 	public long getId() {
 		return id;
 	}
@@ -56,4 +64,10 @@ public class Kids {
 	public void setParents(Parents parents) {
 		this.parents = parents;
 	}
+
+	@Override
+	public String toString() {
+		return "Kids [firstName=" + firstName + ", lastName=" + lastName + ", parents=" + parents + "]";
+	}
+	
 }

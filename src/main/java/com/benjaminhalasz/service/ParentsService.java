@@ -21,5 +21,8 @@ public class ParentsService {
 	public Parents findParents(String parentsName) {
 		return parentsRepository.findParentsByFirstName(parentsName);
 	}
+	public Parents findByLastName(String lastName) {
+		return parentsRepository.findByLastName(lastName);
+	}
 
 }

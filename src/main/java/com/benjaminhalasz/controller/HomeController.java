@@ -21,21 +21,11 @@ import com.benjaminhalasz.service.ParentsService;
 @Controller
 public class HomeController {
 	
-    KidsRepo kidsRepository;
-    ParentsRepo parentsRepository;
-    
     private KidsService kidsService;
     
     private ParentsService parentsService;
 
-    @Autowired
-    public void setKidsRepository(KidsRepo kidsRepository) {
-        this.kidsRepository = kidsRepository;
-    }
-    @Autowired
-    public void setParentsRepository(ParentsRepo parentsRepository) {
-        this.parentsRepository = parentsRepository;
-    }
+  
     @Autowired
     public void setParentsService(ParentsService parentsService) {
     	this.parentsService = parentsService;
@@ -50,9 +40,22 @@ public class HomeController {
         Parents parents = parentsService.findParents(parentsName.getLastName());
         List<Kids> kids = kidsService.getKids(parentsName.getFirstName());
 
-        model.addAttribute("parents", parents);
+        model.addAttribute("pageTitle", "This is the main page title");
+        model.addAttribute("parent", parents);
         model.addAttribute("children", kids);
-        // render to appropriate view
         return "home";
+    }
+
+    @RequestMapping("/lastName/{lastName}")
+    private String searchForParents(@PathVariable(value="lastName") String lastName, Model model) throws Exception {
+//    	if(lastName == null) {
+//    		throw new IllegalArgumentException("We dont have Parent with this name");
+    	
+    	model.addAttribute("home", kidsService.getSpecificKid(lastName));
+    
+    	
+
+		return "home";
+    	
     }
 }

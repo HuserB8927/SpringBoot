@@ -20,11 +20,18 @@ public class Parents {
     private String firstName;
     @NotNull
     private String lastName;
-    @OneToMany(fetch = FetchType.LAZY, mappedBy="parents") 
+    @OneToMany(mappedBy="parents") 
     private List<Kids> kids;
 	
 	public Parents() {
 		
+	}
+
+	public Parents(@NotNull String firstName, @NotNull String lastName, List<Kids> kids) {
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.kids = kids;
 	}
 
 	public long getId() {

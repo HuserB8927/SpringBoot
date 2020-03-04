@@ -10,4 +10,6 @@ import com.benjaminhalasz.domain.Kids;
 @Repository
 public interface KidsRepo extends CrudRepository<Kids, String> {
 	List<Kids> findAllByParents_FirstName(String parentsName);
+
+	Kids findAllByParentsLastName(String parentsLastName);
 	}
