@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.benjaminhalasz.PracticeEntityApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.758 s - in com.benjaminhalasz.PracticeEntityApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.548 s - in com.benjaminhalasz.PracticeEntityApplicationTests
