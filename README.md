@@ -1,3 +1,7 @@
+#Spring Boot
+
+[![Build Status](https://travis-ci.org/HuserB8927/Simple_CRUD.svg?branch=master)]
+
 Using H2 database to test the project: localhost:8080/db
 
 The program stores kids and one of their parent (or both) and when I search the name of the parent the program should display the name of kid (or kids).
