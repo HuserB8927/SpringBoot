@@ -1,0 +1,8 @@
+com/benjaminhalasz/repository/ParentsRepo.class
+com/benjaminhalasz/controller/HomeController.class
+com/benjaminhalasz/PracticeEntityApplication.class
+com/benjaminhalasz/domain/Parents.class
+com/benjaminhalasz/repository/KidsRepo.class
+com/benjaminhalasz/service/ParentsService.class
+com/benjaminhalasz/service/KidsService.class
+com/benjaminhalasz/domain/Kids.class

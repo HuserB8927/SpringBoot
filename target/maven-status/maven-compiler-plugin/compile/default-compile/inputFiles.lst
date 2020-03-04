@@ -1,8 +1,8 @@
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/repository/ParentsRepo.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/controller/HomeController.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/service/ParentsService.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/service/KidsService.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/domain/Kids.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/PracticeEntityApplication.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/domain/Parents.java
-/Users/benjaminhalasz/Documents/GitHub/Spring/STS/PracticeEntity2/src/main/java/com/benjaminhalasz/repository/KidsRepo.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/service/ParentsService.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/repository/ParentsRepo.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/controller/HomeController.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/domain/Kids.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/repository/KidsRepo.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/PracticeEntityApplication.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/domain/Parents.java
+/Users/benjaminhalasz/Documents/GitHub/Spring/STS/SpringBoot/src/main/java/com/benjaminhalasz/service/KidsService.java
