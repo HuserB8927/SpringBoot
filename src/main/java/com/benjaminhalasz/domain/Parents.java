@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 @Entity 
 public class Parents {
@@ -20,6 +22,7 @@ public class Parents {
     private String firstName;
     @NotNull
     private String lastName;
+    @JsonBackReference
     @OneToMany(mappedBy="parents") 
     private List<Kids> kids;
 	

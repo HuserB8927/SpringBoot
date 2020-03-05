@@ -38,24 +38,12 @@ public class HomeController {
     @RequestMapping("/")
     private String findParents(Parents parentsName, Model model) {
         Parents parents = parentsService.findParents(parentsName.getLastName());
-        List<Kids> kids = kidsService.getKids(parentsName.getFirstName());
+       
 
         model.addAttribute("pageTitle", "This is the main page title");
         model.addAttribute("parent", parents);
-        model.addAttribute("children", kids);
+  
+        
         return "home";
-    }
-
-    @RequestMapping("/lastName/{lastName}")
-    private String searchForParents(@PathVariable(value="lastName") String lastName, Model model) throws Exception {
-//    	if(lastName == null) {
-//    		throw new IllegalArgumentException("We dont have Parent with this name");
-    	
-    	model.addAttribute("home", kidsService.getSpecificKid(lastName));
-    
-    	
-
-		return "home";
-    	
     }
 }

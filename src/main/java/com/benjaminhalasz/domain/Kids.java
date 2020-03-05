@@ -65,9 +65,5 @@ public class Kids {
 		this.parents = parents;
 	}
 
-	@Override
-	public String toString() {
-		return "Kids [firstName=" + firstName + ", lastName=" + lastName + ", parents=" + parents + "]";
-	}
 	
 }

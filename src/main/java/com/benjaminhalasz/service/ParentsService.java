@@ -22,7 +22,7 @@ public class ParentsService {
 		return parentsRepository.findParentsByFirstName(parentsName);
 	}
 	public Parents findByLastName(String lastName) {
-		return parentsRepository.findByLastName(lastName);
+		return parentsRepository.findParentsByLastName(lastName);
 	}
 
 }

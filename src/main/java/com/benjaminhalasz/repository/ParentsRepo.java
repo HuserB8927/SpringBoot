@@ -14,6 +14,6 @@ public interface ParentsRepo extends CrudRepository<Parents, String> {
 	
 	Parents findParentsByFirstName(String parentsName);
 
-	Parents findByLastName(String lastName);
+	Parents findParentsByLastName(String lastName);
 
 }

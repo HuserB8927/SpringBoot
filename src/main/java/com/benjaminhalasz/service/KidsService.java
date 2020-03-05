@@ -19,10 +19,12 @@ public class KidsService {
         this.kidsRepository = kidsRepository;
     }
     
-    public List<Kids> getKids(String parentsName) {
-        return kidsRepository.findAllByParents_FirstName(parentsName);
-    }
-    public Kids getSpecificKid(String parentsLastName) {
-    	return kidsRepository.findAllByParentsLastName(parentsLastName);
-    }
+//    public List<Kids> getKidsByParentsFirstName(String firstName) {
+//        return kidsRepository.findAllByParents_FirstNameIgnoreCase(firstName);
+//    }
+    
+	public List<Kids> getKidsByParentsLastName(String lastName) {
+		return kidsRepository.findAllByParents_LastNameIgnoreCase(lastName);
+	}
+   
 }

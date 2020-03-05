@@ -9,7 +9,13 @@ import com.benjaminhalasz.domain.Kids;
 
 @Repository
 public interface KidsRepo extends CrudRepository<Kids, String> {
-	List<Kids> findAllByParents_FirstName(String parentsName);
+	List<Kids> findAll();
+	
+//	List<Kids> findAllByParents_FirstNameIgnoreCase(String parentsFirstName);
 
-	Kids findAllByParentsLastName(String parentsLastName);
+	
+	//We want to get Kids objects so we write the method in the KidsRepo
+	List<Kids> findAllByParents_LastNameIgnoreCase(String parentsLastName);
+	
+	
 	}
