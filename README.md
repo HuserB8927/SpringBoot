@@ -17,7 +17,7 @@ NAME (NN, String) 
 
 KIDS table: 
 ID (PK, NN, AI, int)           
-NEV (NN, String)            
+NAME (NN, String)            
 PARENTS_ID (NN, int)
 
 The program should use an FK and OneToMany, ManyToOne connection which able to use search and save.
